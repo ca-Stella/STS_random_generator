@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/d9da4906ff.js" crossorigin="anonymous"></script>
+  <title>STS Run Generator</title>
+</head>
+<body>
+  <div class="all">
+    <header class="header" id="head">
+      <h1>STS Run Generator</h1>
+    </header>
+    <div class="bod">
+      <div class="section" id="characterDiv">
+        <h2>Character</h2>
+        <ul class="characterButtons">
+          <li class="chararctersli">
+            <img src="./assets/img/characters/ironcladButton.png" class="characters" id="ironclad" onclick="charClick(this);"></img>
+          </li>
+          <li class="chararctersli">
+            <img src="./assets/img/characters/silentButton.png" class="characters" id="silent" onclick="charClick(this);"></img>
+          </li>
+          <li class="chararctersli">
+            <img src="./assets/img/characters/defectButton.png" class="characters" id="defect" onclick="charClick(this);"></img>
+          </li>
+          <li class="chararctersli">
+            <img src="./assets/img/characters/watcherButton.png" class="characters" id="watcher" onclick="charClick(this);"></img>
+          </li>
+        </ul>
+      </div>
+      <div class="section" id="ascensionDiv">
+        <h2>Ascension</h2>
+        <div class="ascensiondiv">
+          <label for="ascinput" id="asclabel">Change if you want!!</label>
+          <input type="number" name="ascinput" id="ascinput" min="1" max="20">
+        </div>
+      </div>
+
+      <div class="section" id="modifiers">
+        <h2>Modifiers</h2>
+        <div class="modifierslist" id="modlistdiv">
+          <p class="mods" id="modGreen"></p>
+          <p class="mods" id="modBlue"></p>
+          <p class="mods" id="modRed"></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="bod" id="generateDiv">
+      <button class="button" id="generatebutton" onclick="generateEverything()">Generate!</button>
+    </div>
+  </div>
+  <footer id="foot">
+    Copyright 2024 ©&nbsp;<a href="https://github.com/ca-Stella/sts_random_generator">caStella</a>
+  </footer>
+</body>
+</html>
+

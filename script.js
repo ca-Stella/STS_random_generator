@@ -1,5 +1,4 @@
 const modDiv = document.getElementById('modlistdiv');
-const genButton = document.getElementById('generatebutton');
 const modList = document.getElementById('modList');
 const modGreen = document.getElementById('modGreen');
 const modRed = document.getElementById('modRed');
@@ -166,7 +165,6 @@ function genCharacter() {
 }
 
 function genModList() {
-    print("aaaaa")
     const redSet = new Set();
 
     for (let i = 0; i < 7; i++) {
